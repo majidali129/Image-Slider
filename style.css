@@ -1,0 +1,70 @@
+*,::after,::before{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( to right , hsla(59, 79%, 54%, 0.848),hsla(95, 77%, 54%, 0.694));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 100%;
+    height: 75%;
+    /* border: 2px solid green; */
+    
+}
+.container .slider{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 10px 2px rgba(89, 84, 84, 0.456);
+    margin: auto;
+}
+.container .slider figure{
+    width: 100%;
+    height: 100%;
+}
+.slider figure img{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.slider{
+    display: none;
+}
+
+.btns{
+    margin-top: 4em;
+    padding: 0.5em;
+}
+.btns span{
+    margin: 0em 2em;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 2vw;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.next{
+    background-color: hsl(60, 94%, 50%);
+}
+.back{
+    background-color: hsl(120, 84%, 47%);
+}
